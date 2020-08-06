@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img\site-img\img1.png">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style4.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width:0px)" href="small.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width:820px)" href="medium.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width:1200px)" href="large.css">
+    <title>Guinea pig life</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <div class="img">
+            <img src="img\site-img\img17.png" width="1350px" height="200px">
+            <div id="menu">
+                <nav>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page.html">Alimentação</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page2.html">Doenças</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Adoção</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <script>
+            function mostra() {
+                document.getElementById('form').style.display = 'block';
+            }
+        </script>
+    </header>
+    <input type="button" value="Gostaria de adotar um Porquinho da índia? Se sim, clique aqui" onclick="mostra()">
+    <div id="form" class="hidden">
+        <article>
+            <div class="alert alert-success" role="alert">
+                Preencha o questionário, entraremos em contato assim que possível
+            </div>
+            <h1>Questionário Pré-Adoção</h1>
+            <label>Nome Completo</label>
+            <input type=“text” name=“nome” placeholder="Digite aqui"> <br>
+            <label>Idade</label>
+            <input type=“text” name=“nome” placeholder="Digite aqui"> <br>
+            <label>E-mail</label>
+            <input type=“text” name=“nome” placeholder="nome@exemplo.com"> <br>
+            <label>Cidade</label>
+            <input type="hidden" name="informacao_oculta" value="mensagem oculta">
+
+            <br>
+
+            <label for="select"></label>
+            <select name="selecao">
+                <option value="1">Outro</option>
+                <option value="2">Palmas</option>
+                <option value="3">Porto Nacional</option>
+            </select>
+
+            <br>
+
+            <label>Endereço Completo </label>
+            <input type=“text” name=“nome” placeholder="Digite aqui"> <br>
+            <label>Profissão</label>
+            <input type=“text” name=“nome” placeholder="Digite aqui">
+
+            <br>
+
+            <label><b>Ocupação</b></label> <br>
+            <input type="radio" name="radio1" value="1">Trabalha<br>
+            <input type="radio" name="radio1" value="2">Estuda<br>
+            <input type="radio" name="radio1" value="3">Trabalha e Estuda<br>
+            <input type="radio" name="radio1" value="4">Não Trabalha nem Estuda
+
+            <br>
+
+            <label><b>Por que motivos você gostaria de adotar um animal de estimação ?</b></label> <br>
+            <input type="radio" name="radio1" value="1">Companhia<br>
+            <input type="radio" name="radio1" value="2">Presentear alguém<br>
+            <input type="radio" name="radio1" value="3">Outro
+            <input type=“text” name=“nome” placeholder="Seu motivo">
+
+            <br>
+
+            <label><b>Você tem condições de acrescentar ao seu orçamento os gastos que terá com alimentação de boa
+                    qualidade e atendimento veterinário?</b></label> <br>
+            <input type="radio" name="radio1" value="1">Sim<br>
+            <input type="radio" name="radio1" value="2">Não<br>
+            <label><b>Você esta ciente que ter um animal é semelhante a ter uma criança, que ele pode vir a ter despesas
+                    totalmente imprevisíveis e que o responsável por TODAS elas é VOCÊ?</b></label> <br>
+            <input type="radio" name="radio1" value="1">Sim<br>
+            <input type="radio" name="radio1" value="2">Não<br>
+            <label><b>Você já adotou algum animal e depois o entregou para um abrigo ou o deixou na rua?</b></label>
+            <br>
+            <input type="radio" name="radio1" value="1">Sim<br>
+            <label>Se sim, descreva as circunstâncias</label>
+            <input type=“text” name=“nome” placeholder="Digite aqui"> <br>
+            <input type="radio" name="radio1" value="2">Não<br>
+            <label><b>Você já perdeu algum animal por deixá-lo passear na rua sozinho ou porque deixou o portão
+                    aberto?</b></label> <br>
+            <input type="radio" name="radio1" value="1">Sim<br>
+            <label>Se sim, descreva as circunstâncias</label>
+            <input type=“text” name=“nome” placeholder="Digite aqui"> <br>
+            <input type="radio" name="radio1" value="2">Não<br>
+            <label><b>Você tem consciência que porquinhos da india podem viver mais de 8 anos e que a adoção é um ato de
+                    grande responsabilidade?</b></label> <br>
+            <input type="radio" name="radio1" value="1">Sim<br>
+            <input type="radio" name="radio1" value="2">Não
+
+            <br>
+
+            <label><b>Na sua casa são quantos adultos e quantas crianças? Se há crianças, quais as idades? Todos
+                    concordam
+                    com a adoção?</b></label><br>
+            <input type=“text” name=“nome” placeholder="Resposta aqui"> <br>
+            <label><b>Sua casa é própria ou alugada? Se alugada, o proprietário permite animais? Se é prédio, é
+                    permitido
+                    ter animais?</b> </label><br>
+            <input type=“text” name=“nome” placeholder="Resposta aqui"> <br>
+            <label><b> horas por dia o animal ficará sozinho na casa?</b> </label><br>
+            <input type=“text” name=“nome” placeholder="Resposta aqui"> <br>
+            <label><b>Você já tem animais de estimação? Quais? Qual a idade deles?</b> </label><br>
+            <input type=“text” name=“nome” placeholder="Resposta aqui"> <br>
+            <label><b>Já teve outros animais alguma vez? O que aconteceu com eles? Se faleceram, qual foi a causa?</b>
+            </label><br>
+            <input type=“text” name=“nome” placeholder="Resposta aqui"> <br>
+            <label><b>Quem tomará conta do animal caso você e sua família viagem?</b> </label><br>
+            <input type=“text” name=“nome” placeholder="Resposta aqui">
+
+            <br>
+
+
+            <label><b>Período de adaptação – você está ciente que o bichinho pode chorar, ficar agitado ou prostrado,
+                    fazer
+                    coco e xixi em locais não adequados, tentar fugir etc? Paciência e compreensão são fundamentais para
+                    o
+                    sucesso da adaptação no novo lar.</b></label> <br>
+            <input type="radio" name="radio1" value="1">Sim<br>
+            <input type="radio" name="radio1" value="2">Não<br>
+            <label><b>Você concorda que todas as suas respostas são verdadeiras e que assume total responsabilidade pelo
+                    o
+                    que foi aqui respondido?</b></label> <br>
+            <input type="radio" name="radio1" value="1">Sim, concordo<br>
+            <input type="radio" name="radio1" value="2">Não<br>
+
+            <a class="btn btn-primary" href="index.html" role="button">Enviar</a>
+        </article>
+    </div>
+    <div class="footer-main-div">
+        <div class="footer-social-icons">
+            <p>Saiba mais</p>
+            <ul>
+                <li><a href="#" target="blank"><i class="fa-facebook"></i></a></li>
+                <li><a href="#" target="blank"><i class="fa-twitter"></i></a></li>
+                <li><a href="#" target="blank"><i class="fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+        <p>
+            <copyright>&copy;Fernanda Fontoura 2020</copyright>
+        </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
